@@ -1,3 +1,8 @@
+###Get started
+
+1. npm install
+2. npm start
+
 [REF.](https://www.electronjs.org/docs/api/ipc-main)
 
 ```js
