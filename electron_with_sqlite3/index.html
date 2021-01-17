@@ -7,7 +7,7 @@
   <script>
     const ipc = require('electron').ipcRenderer;
     function run() {
-      ipc.send('test');
+      console.log(ipc.sendSync('synchronous-message', 'pong'));
     }
   </script>
   </head>

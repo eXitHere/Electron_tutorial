@@ -27,6 +27,7 @@ app.on('activate', () => {
   }
 })
 
-ipc.on('test', function(event) {
-  console.log("Hello world");
+ipc.on('synchronous-message', (event, arg) => {
+    console.log("message in main.js", arg);
+    event.returnValue = "pong";
 })
