@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Hello World!</title>
+      <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <script>
+    const ipc = require('electron').ipcRenderer;
+    function run() {
+      ipc.send('test');
+    }
+  </script>
+  </head>
+  <body style="background: white;">
+      <button onclick="run()"">
+        Hello world
+      </button>
+  </body>
+</html>
